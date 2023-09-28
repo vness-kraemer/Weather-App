@@ -44,6 +44,13 @@ document.addEventListener("DOMContentLoaded", function () {
     let city = document.querySelector("#city-input").value;
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(displayWeatherCondition);
+
+    clearInput();
+  }
+
+  function clearInput() {
+    // Löschen Sie den Text im Eingabefeld nach der Eingabe
+    document.querySelector("#city-input").value = "";
   }
 
   let dateElement = document.querySelector("#date");

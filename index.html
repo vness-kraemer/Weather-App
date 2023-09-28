@@ -39,7 +39,8 @@
           <div class="row weather-row">
             <!-- Hier beginnt die Col Number  -->
             <div class="col-sm-4 number-col">
-              <p class="degree" id="temperature">26<p class="celsius">°</p></p>
+              <p class="degree" id="temperature">26</p>
+              <p class="celsius">°</p>
             </div>
             <!-- Hier beginnt die City col  -->
             <div class="col-sm-8 city-col">
@@ -53,7 +54,7 @@
 
         <div class="col-sm-4 panel">
           <div class="row search-bar">
-            <!-- Hier beginnt der Input Type Text  -->
+            <!-- Hier beginnt der Input Type Search  -->
             <div class="col-sm-12">
               <form class="search-form" id="search-form">
                 <input
@@ -63,16 +64,16 @@
                   autofocus="on"
                   autocomplete="off"
                   class="styling-input"
+                  oninput="clarInput()"
                 />
 
                 <!-- Hier beginnt der Search Button  -->
                 <!-- <div class="col-sm-4 search-button"> -->
-                  <input
-                    type="submit"
-                    value="Search"
-                    class="btn btn-primary shadow-sm"
-                  />
-                
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary shadow-sm"
+                />
               </form>
             </div>
           </div>
