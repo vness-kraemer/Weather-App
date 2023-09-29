@@ -159,3 +159,12 @@ ul.details {
     min-height: 40em;
   }
 }
+
+.link {
+  color: white;
+  margin: 10px 0 0 0;
+}
+
+a {
+  color: white;
+}
